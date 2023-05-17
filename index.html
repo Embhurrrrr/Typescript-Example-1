@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap"
+			rel="stylesheet" />
+		<link href="./index.css" rel="stylesheet" />
+		<title>Angular Exercise 1</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-content">
+				<h1>City Directory</h1>
+				<section id="cityDirectory">
+					<form
+						class="form"
+						action=""
+						onsubmit="addCity(document.getElementById('addCityName').value,
+    						  document.getElementById('addCountry').value,
+    						  document.getElementById('addPopulation').value)">
+						<input
+							type="text"
+							id="addCityName"
+							class="text-input"
+							placeholder="Enter City"
+							required />
+
+						<br />
+
+						<input
+							type="text"
+							id="addCountry"
+							class="text-input"
+							placeholder="Enter Country"
+							required />
+						<br />
+
+						<input
+							type="number"
+							id="addPopulation"
+							class="text-input"
+							placeholder="Enter Population"
+							required />
+						<br />
+						<br />
+						<button type="submit" class="button-addCity">ADD CITY</button>
+					</form>
+					<div class="container-h3-search">
+						<div class="element">
+							<h3 class="h3-city-label">City List</h3>
+						</div>
+
+						<div class="element">
+							<input
+								type="text"
+								id="searchCity"
+								class="input-search"
+								placeholder="Search" />
+							<div class="search"></div>
+						</div>
+					</div>
+					<table id="cityTable">
+						<thead>
+							<tr>
+								<th>City</th>
+								<th>Country</th>
+								<th>Population</th>
+							</tr>
+						</thead>
+						<tbody id="cityList"></tbody>
+					</table>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script>
+		var exports = { __esModule: { value: true } };
+	</script>
+	<script src="index.js"></script>
+</html>
